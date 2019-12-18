@@ -10,7 +10,11 @@ slidingDancer.prototype.constructor = slidingDancer;
 slidingDancer.prototype.step = function () {
   makeDancer.prototype.step.call(this);
   this.$node.animate({
-    left: `${Math.random() * 500}`
+    left: `${Math.random() * 1500}`
   }, 2000);
+  this.$node.animate({
+    top: `${Math.random() * 1000}`
+  }, 2000);
+
 };
 

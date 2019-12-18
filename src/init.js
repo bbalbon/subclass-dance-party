@@ -34,41 +34,45 @@ $(document).ready(function() {
   $('.lineUp').on('click', function(event) {
     let left = 20;
     for (var i = 0; i < window.dancers.length; i++) {
-      window.dancers[i].setPosition(400, left);
-      left += 20;
+      window.dancers[i].setPosition(100, left);
+      left += (2000 / (window.dancers.length));
     }
   });
 
   function lineUp(input) {
-    let left = 20;
+    let top = input[0].top;
+    let left = input[0].left;
     for (var i = 0; i < input.length; i++) {
-      input[i].setPosition(300, left);
-      left += 20;
+      input[i].$node.animate({
+        left: `${500}`
+      }, 2000);
+      input[i].setPosition(top, input[0].left);
+      top += 20;
     }
   }
 
   $('.checkOtherNodes').on('click', function(event) {
-    const leader = window.dancers[0];
+    const leaderIndex = Math.floor(Math.random() * window.dancers.length);
+    console.log(window.dancers[leaderIndex]);
+    const leader = window.dancers[leaderIndex];
     let resultArr = [leader];
 
     for (var i = 1; i < window.dancers.length; i++) {
+      if (i === leaderIndex) {
+        continue;
+      }
       let currentDancer = window.dancers[i];
       let hyp = Math.sqrt(((leader.left - currentDancer.left) ** 2  + (leader.top - currentDancer.top) ** 2));
       if (hyp <= 500) {
         resultArr.push(currentDancer)
       }
     }
-    console.log(resultArr);
-
-
     lineUp(resultArr);
-
-    //for loop i
-    //for loop j
-    //if node i is within (left^2 + top^2) of item j, DO SOMETHING
-
-    // console.log('we are checking the other nodes');
   });
+
+  $('.dancer').on('mouseover', function(event){
+    console.log('YOUVE TOUCHED ME');
+  })
 
 });
 

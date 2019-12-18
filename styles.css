@@ -17,21 +17,10 @@ body, a:link, a:visited, a:active{
 }
 .topbar{
   height:32px;
-  /* background-color: #555; */
-  /* padding: 15; */
-  /* border: 10px solid;
-  border-radius: 60; */
-
 }
 .title{
   background-color: #777;
 }
-
-/* .dancer{
-  border:10px solid green;
-  border-radius:10px;
-  position:absolute;
-} */
 
 .blinker{
   border:10px solid red;
@@ -42,6 +31,8 @@ body, a:link, a:visited, a:active{
 .slider{
   border:10px solid black;
   border-radius:10px;
+  /* background-image: url('http://arcadiawindber.com/wp-content/uploads/2017/05/disco-ball-and-disco-floor.jpg'); */
+
   position:absolute;
 }
 
@@ -50,14 +41,8 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
-/* .addDancerButton {
-} */
-/* .container {
-  height:400px;
 
-} */
-
-.addDancerButton {
+.addDancerButton, .checkOtherNodes, .lineUp {
   background-color: grey; /* Green */
   border-radius: 10px;
   color: white;
@@ -67,4 +52,8 @@ body, a:link, a:visited, a:active{
   display: inline-block;
   font-size: 16px;
   border: solid 5px black;
+}
+
+a:hover {
+  background-color: yellow;
 }
