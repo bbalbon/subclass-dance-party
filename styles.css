@@ -53,3 +53,7 @@ body, a:link, a:visited, a:active{
 a:hover {
   background-color: yellow;
 }
+
+div .blinker {
+  content: url("https://media.giphy.com/media/yqMtk0TfjRa5W/giphy.gif");
+}​

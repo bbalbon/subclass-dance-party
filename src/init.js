@@ -69,8 +69,8 @@ $(document).ready(function() {
     lineUp(resultArr);
   });
 
-  $('.dancer').on('mouseover', function(event){
-    console.log('YOUVE TOUCHED ME');
+  $('.dancer .blinker').on('mouseover', function(event){
+    alert(`You've touched me`);
   })
 
 });

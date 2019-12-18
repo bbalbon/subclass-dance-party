@@ -14,3 +14,7 @@ makeBlinkyDancer.prototype.step = function () {
   this.$node.toggle();
 };
 
+
+
+
+// https://media.giphy.com/media/yqMtk0TfjRa5W/giphy.gif
