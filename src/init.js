@@ -53,7 +53,6 @@ $(document).ready(function() {
 
   $('.checkOtherNodes').on('click', function(event) {
     const leaderIndex = Math.floor(Math.random() * window.dancers.length);
-    console.log(window.dancers[leaderIndex]);
     const leader = window.dancers[leaderIndex];
     let resultArr = [leader];
 

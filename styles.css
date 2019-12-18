@@ -29,10 +29,6 @@ body, a:link, a:visited, a:active{
 }
 
 .slider{
-  border:10px solid black;
-  border-radius:10px;
-  /* background-image: url('http://arcadiawindber.com/wp-content/uploads/2017/05/disco-ball-and-disco-floor.jpg'); */
-
   position:absolute;
 }
 
